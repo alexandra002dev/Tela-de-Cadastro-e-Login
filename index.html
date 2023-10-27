@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+    <div class="container">
+        <form method="post" class="form">
+            <h1>Entrar</h1>
+            <div class="msgError"></div>
+            <div class="msgSucess"></div>
+            <div class="form-container">
+                <input type="text" name="usuario" id="usuario" placeholder="" required>
+                <label id="labelUsuario" for="usuario">Usuário</label>
+            </div>
+            <div class="form-container">
+                <input type="password" name="senha" id="senha" placeholder="" required>
+                <label id="labelSenha" for="senha">Senha</label>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            <div class="justy_center">
+                <button id="button">Entrar</button>
+            </div>
+            <div class="justy_center">
+                <hr>
+            </div>
+            <p> Não tem uma conta
+                <a href="cadastro.html">Cadastre-se</a>
+            </p>
+            
+            
+        </form>
+    </div>
+
+    <script src="script_login.js"></script>
+</body>
+</html>

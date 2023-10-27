@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+<body>
+    <div class="container">
+        <form method="post" class="form">
+            <h1>Cadastrar</h1>
+            <div class="msgError"></div>
+            <div class="msgSucess"></div>
+            <div class="form-container">
+                <input type="text" name="nome" id="nome" placeholder="" required>
+                <label id="labelNome" for="nome">Nome</label>
+            </div>
+            <div class="form-container">
+                <input type="text" name="usuario" id="usuario" placeholder="" required>
+                <label id="labelUsuario" for="usuario">Usuário</label>
+            </div>
+            <div class="form-container">
+                <input type="password" name="senha" id="senha" placeholder="" required>
+                <label id="labelSenha" for="senha">Senha</label>
+                <i id = "mostrarSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            <div class="form-container">
+                <input type="password" name="confirmsenha" id="confirmsenha" placeholder="" required>
+                <label id="labelConfirmSenha" for="confirmsenha">Confirma Senha</label>
+                <i id="MostrarConfirm" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            <div class="justy_center">
+                <button>Cadastrar</button>
+            </div>            
+            
+        </form>
+    </div>
+
+    <script src="script_cadastro.js"></script>
+</body>
+</html>
